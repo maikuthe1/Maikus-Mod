@@ -1,7 +1,10 @@
 package maiku.maikusmod.recipe;
 
 import maiku.maikusmod.block.MaikusModBlocks;
+import maiku.maikusmod.item.MaikusModItems;
 import net.minecraft.core.block.Block;
+import net.minecraft.core.item.Item;
+import net.minecraft.core.item.ItemStack;
 import turniplabs.halplibe.helper.RecipeHelper;
 
 public class MaikusModRecipes {
@@ -13,8 +16,13 @@ public class MaikusModRecipes {
         });
     }
 
+    private void furnaceRecipes() {
+         RecipeHelper.blastingManager.addSmelting(Item.slimeball.id, new ItemStack(MaikusModItems.gelatin));
+    }
+
     public void Initialize()
     {
         craftingRecipesBlocks();
+        furnaceRecipes();
     }
 }

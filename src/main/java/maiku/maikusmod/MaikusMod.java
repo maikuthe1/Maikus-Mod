@@ -9,6 +9,7 @@ import org.slf4j.LoggerFactory;
 import maiku.maikusmod.block.MaikusModBlocks;
 import maiku.maikusmod.recipe.MaikusModRecipes;
 import maiku.maikusmod.config.MaikusModConfig;
+import maiku.maikusmod.item.MaikusModItems;
 
 public class MaikusMod implements ModInitializer {
     public static final String MOD_ID = "maikusmod";
@@ -22,6 +23,7 @@ public class MaikusMod implements ModInitializer {
         SoundHelper.addSound(MOD_ID, "metalarmor1.ogg");
 
         new MaikusModBlocks().Initialize();
+        new MaikusModItems().Initialize();
         new MaikusModRecipes().Initialize();
 
         LOGGER.info("MaikusMod initialized.");

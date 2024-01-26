@@ -74,6 +74,7 @@ public class WorldMixin {
      */
     @Inject(method = "playSoundAtEntity(Lnet/minecraft/core/entity/Entity;Ljava/lang/String;FF)V", at = @At(value ="HEAD"), cancellable = true) // Don't think we need the arguments in the method here not sure
     private void onEntityPlaySound(Entity entity, String soundPath, float volume, float pitch, CallbackInfo ci){
+        //TODO: Optimize this, checking every block in a radius every time a sound is played is not a good solution
         if(!(entity instanceof EntityPlayer))
         {
             if(checkBlocksAroundPoint(world, entity.x, entity.y, entity.z, 5, MaikusModBlocks.soundDampener))

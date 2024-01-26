@@ -37,8 +37,7 @@ public class EntityMixin {
                     }
             }
             if(barefoot || leatherBoots){
-                if(barefoot)
-                    world.playSoundAtEntity(me, "step.cloth", 0.25F, 2F);
+                    world.playSoundAtEntity(me, "step.cloth", (barefoot) ? 0.25F : 0.1F, 2F);
 
                 if(block.blockMaterial == Material.wood)
                 {
