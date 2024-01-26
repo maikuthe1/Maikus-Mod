@@ -8,7 +8,7 @@ A mod for BTA
 # Implemented features
 - Sound dampener block
 - Dynamic footstep sounds based on worn armor (WIP)
-- Dyanamic lighting
+- Dynamic lighting
 
 # Planned features
 - Gummy bears that give effects similar to modern MC's potions
