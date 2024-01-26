@@ -17,6 +17,6 @@ A mod for BTA
 
 # Requirements
 - BTA 1.7.7.0_02
-- HalpLibe 2.7.0+
+- HalpLibe 2.7.0
 
 For installation and modding help, check out the BTA wiki: https://bta.miraheze.org/wiki/Modding#Users
