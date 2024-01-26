@@ -6,7 +6,13 @@
     "mixins": [
     ],
     "client": [
-
+      "WorldMixin",
+      "ChunkCacheMixin",
+      "EntityCreeperAccessor",
+      "ChunkRendererMixin",
+      "WorldRendererMixin",
+      "EntityPlayerMixin",
+      "EntityMixin"
     ],
     "injectors": {
         "defaultRequire": 1
