@@ -37,19 +37,19 @@ public class EntityMixin {
                     }
             }
             if(barefoot || leatherBoots){
-                    world.playSoundAtEntity(me, "step.cloth", (barefoot) ? 0.25F : 0.1F, 2F);
+                    world.playSoundAtEntity(me, "step.cloth", (barefoot) ? 0.08F : 0.1F, (barefoot) ? 3F : 2F);
 
                 if(block.blockMaterial == Material.wood)
                 {
-                    world.playSoundAtEntity(me, "step.wood", (barefoot) ? 0.15F : 0.4F, 1.2F);
+                    world.playSoundAtEntity(me, "step.wood", (barefoot) ? 0.04F : 0.25F, 1.2F);
                 }
                 if(block.blockMaterial == Material.grass)
                 {
-                    world.playSoundAtEntity(me, "step.grass", (barefoot) ? 0.04F : 0.1F, 0.8F);
+                    world.playSoundAtEntity(me, "step.grass", (barefoot) ? 0.02F : 0.1F, 0.8F);
                 }
                 if(block.blockMaterial == Material.dirt)
                 {
-                    world.playSoundAtEntity(me, "step.gravel", (barefoot) ? 0.08F : 0.15F, 0.8F);
+                    world.playSoundAtEntity(me, "step.gravel", (barefoot) ? 0.02F : 0.15F, 0.8F);
                 }
                 if(block.blockMaterial == Material.sand)
                 {
@@ -57,7 +57,7 @@ public class EntityMixin {
                 }
                 if(block.blockMaterial == Material.stone)
                 {
-                    world.playSoundAtEntity(me, "step.stone", (barefoot) ? 0.08F : 0.15F, 0.8F);
+                    world.playSoundAtEntity(me, "step.stone", (barefoot) ? 0.04F : 0.15F, 0.8F);
                 }
             }
             else if(numMetalArmor > 1)
